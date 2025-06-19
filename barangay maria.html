@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siquijor Barangays</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .barangay-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .barangay-img {
+            height: 160px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .barangay-img:hover {
+            transform: scale(1.03);
+        }
+
+        .modal-img {
+            max-height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .btn-lightblue {
+            background-color: rgb(57, 188, 231);
+            border-color: rgb(61, 187, 230);
+            color: #181616;
+        }
+
+        .btn-lightblue:hover,
+        .btn-lightblue:focus {
+            background-color: #56c1eb;
+            border-color: #57bde6;
+            color: #000;
+        }
+
+        .bg-brown {
+            background-color: #63c2ee;
+        }
+
+        .img-fit {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .img-fit {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+        <div class="container">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="navbar-brand">Siquijor Info</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Overview
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="lungsod.html#about">About us</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#guidelines">Guidelines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Barangays of Maria</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/sawang 1.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modal1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sawang</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/saguing.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modal2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Saguing</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/poblacion sur.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modal3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Poblacion Sur</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New -->
+            <!-- Card for Poblacion Norte -->
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/pob norte.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modalPoblacionNorte">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Poblacion Norte</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for Poblacion Norte -->
+            <div class="modal fade" id="modalPoblacionNorte" tabindex="-1" aria-labelledby="modalLabelPoblacionNorte"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Poblacion Norte</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body position-relative">
+
+                            <!-- Carousel -->
+                            <div id="carouselPoblacionNorte" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/pob norte.jpg" class="d-block w-100 img-fit" alt="Poblacion Norte">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/pob norte 1.jpg" class="d-block w-100 img-fit" alt="Poblacion Norte">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/pob norte 2.jpg" class="d-block w-100 img-fit" alt="Poblacion Norte">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselPoblacionNorte" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselPoblacionNorte" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+
+                            <!-- Info Section -->
+                            <p><strong>Fiesta:</strong> April 21</p>
+                            <p><strong>Segunda Devotos:</strong> April 22</p>
+                            <p><strong>Barangay Officials:</strong></p>
+                            <ul>
+                                <li>Brgy. Captain: Ana Lim</li>
+                                <li>Konsehal: Pedro Santos</li>
+                                <li>Mayor: Mutcho Largo</li>
+                                <li>Vice Mayor: Omictin Michael</li>
+                            </ul>
+
+                            <!-- Bottom-right Logo -->
+                            <img src="../img/logo-poblacion.png"
+                                style="width:60px; position:absolute; bottom:10px; right:10px;" alt="Logo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- New -->
+            <!-- Card for Pisong A -->
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/pisong a.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modalPisongA">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pisong A</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for Pisong A -->
+            <div class="modal fade" id="modalPisongA" tabindex="-1" aria-labelledby="modalLabelPisongA"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Pisong A</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body position-relative">
+
+                            <!-- Carousel -->
+                            <div id="carouselPisongA" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/pisong a.jpg" class="d-block w-100 img-fit" alt="Pisong A">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/pisong a 1.jpg" class="d-block w-100 img-fit" alt="Pisong A">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/pisong 2.jpg" class="d-block w-100 img-fit" alt="Pisong A">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPisongA"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPisongA"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+
+                            <!-- Info Section -->
+                            <p><strong>Fiesta:</strong> April 21</p>
+                            <p><strong>Segunda Devotos:</strong> April 22</p>
+                            <p><strong>Barangay Officials:</strong></p>
+                            <ul>
+                                <li>Brgy. Captain: Ana Lim</li>
+                                <li>Konsehal: Pedro Santos</li>
+                                <li>Mayor: Mutcho Largo</li>
+                                <li>Vice Mayor: Omictin Michael</li>
+                            </ul>
+
+                            <!-- Optional Logo -->
+                            <img src="../img/pisong-logo.png" style="width:60px; position:absolute; bottom:10px; right:10px;"
+                                alt="Logo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/pisong b.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modal6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pisong B</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/olang 2.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modal7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Olang</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/nabutay.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nabutay</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/minalulan.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal9">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Minalulan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/looc.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal10">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Looc</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/logucan.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal11">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Logucan</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card for Lilo‑an -->
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/liloan.jpg" class="card-img-top barangay-img" data-bs-toggle="modal"
+                        data-bs-target="#modalLiloan" alt="Lilo‑an">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lilo‑an</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for Lilo‑an -->
+            <div class="modal fade" id="modalLiloan" tabindex="-1" aria-labelledby="modalLabelLiloan"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Lilo‑an</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body position-relative">
+
+                            <!-- Carousel -->
+                            <div id="carouselLiloan" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../img/liloan.jpg" class="d-block w-100 img-fit" alt="Lilo‑an">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/liloan 2.jpg" class="d-block w-100 img-fit" alt="Lilo‑an">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/liloan 3.jpg" class="d-block w-100 img-fit" alt="Lilo‑an">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLiloan"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselLiloan"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+
+                            <!-- Info Section -->
+                            <p><strong>Fiesta:</strong> April 21</p>
+                            <p><strong>Segunda Devotos:</strong> April 22</p>
+                            <p><strong>Barangay Officials:</strong></p>
+                            <ul>
+                                <li>Brgy. Captain: Ana Lim</li>
+                                <li>Konsehal: Pedro Santos</li>
+                                <li>Mayor: Roselyn Aso</li>
+                                <li>Vice Mayor: Don don Aso</li>
+                            </ul>
+
+                            <!-- Optional Logo -->
+                            <img src="" style="width:60px; position:absolute; bottom:10px; right:10px;" alt="Logo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/licoan 2.jpg" class="card-img-top barangay-img" alt="Tigbawan" data-bs-toggle="modal"
+                        data-bs-target="#modal13">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lico‑an</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/cantugbas 2.jpg" class="card-img-top barangay-img" alt="Tigbawan" data-bs-toggle="modal"
+                        data-bs-target="#modal14">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cantugbas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/cantaroc b.jpg" class="card-img-top barangay-img" alt="Tigbawan" data-bs-toggle="modal"
+                        data-bs-target="#modal15">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cantaroc B</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/cantaroc a.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal16">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> Cantaroc A</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/candaping b2.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal17">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Candaping B</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/candaping a.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal18">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Candaping A</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/canlunasan.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal19">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Calunasan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/cabalasan 2.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal20">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cabal‑asan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/bonga.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal21">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bonga</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card barangay-card">
+                    <img src="../img/bogo 2.jpg" class="card-img-top barangay-img"  data-bs-toggle="modal"
+                        data-bs-target="#modal22">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bogo</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sawang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/sawang 1.jpg" class="modal-img mb-3" alt="Campalanas">
+                    <p><strong>Fiesta:</strong>Dec. 3</p>
+                    <p><strong>Segunda Devotos:</strong>June 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edsil Taroc</li>
+                        <li>Konsehal: Juvy Balacy</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                    <img src="../img/Cangmalalag jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Saguing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/saguing.jpg" class="modal-img mb-3" alt="Saguing">
+                    <p><strong>Fiesta:</strong> March 19</p>
+                    <p><strong>Segunda Devotos:</strong> March 20</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Rosa Reyes</li>
+                        <li>Konsehal: Lito Cruz</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                    <img src="../img/Cangmalalag jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;"
+                        alt="Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tigbawan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/poblacion sur.jpg" class="modal-img mb-3" alt="Poblacion Sur">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pisong b</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/pisong b.jpg" class="modal-img mb-3" alt="pisong b">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Olang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/olang 2.jpg" class="modal-img mb-3" alt="Olang">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modalLabel8" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Nabutay</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselModal8" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/nabutay.jpg" class="d-block w-100" alt="nabutay">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/nabutay 2.jpg" class="d-block w-100" alt="nabutay">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal8" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselModal8" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <p><strong>Fiesta:</strong> Sept 9</p>
+        <p><strong>Segunda Devotos:</strong> Sept 10</p>
+        <p><strong>Barangay Officials:</strong></p>
+        <ul>
+          <li>Brgy. Captain: Edgar Silva</li>
+          <li>Konsehal: Juvy Balacy</li>
+          <li>Mayor: Mutcho Largo</li>
+          <li>Vice Mayor: Omictin Michael</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minalulan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/minalulan.jpg" class="modal-img mb-3" alt="Minalulan">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Looc</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/looc.jpg" class="modal-img mb-3" alt="Looc">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn T. Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Logucan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/logucan.jpg" class="modal-img mb-3" alt="logucan">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tigbawan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="bruce room1.jpg" class="modal-img mb-3" alt="Tigbawan">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tigbawan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/licoan 2.jpg" class="modal-img mb-3" alt="Tigbawan">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                    <img src=".jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modalLabel14" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Capalasanan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselModal14" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/cantugbas 2.jpg" class="d-block w-100" alt="cantugbas">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/cantugbas.jpg" class="d-block w-100" alt="cantugbas">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal14" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselModal14" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <p><strong>Fiesta:</strong> Sept 9</p>
+        <p><strong>Segunda Devotos:</strong> Sept 10</p>
+        <p><strong>Barangay Officials:</strong></p>
+        <ul>
+          <li>Brgy. Captain: Edgar Silva</li>
+          <li>Konsehal: Juvy Balacy</li>
+          <li>Mayor: Mutcho Largo</li>
+          <li>Vice Mayor: Omictin Michael</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cataroc b</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/cantaroc b.jpg" class="modal-img mb-3" alt="cantaroc b">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cantaroc a</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/cantaroc a.jpg" class="modal-img mb-3" alt="Tigbawan">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Dennis Uy</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal17" tabindex="-1" aria-labelledby="modalLabel17" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Candaping B</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselModal17" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/candaping b2.jpg" class="d-block w-100" alt="Tigbawan Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/candaping b.jpg" class="d-block w-100" alt="Tigbawan Image 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal17" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselModal17" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <p><strong>Fiesta:</strong> Sept 9</p>
+        <p><strong>Segunda Devotos:</strong> Sept 10</p>
+        <p><strong>Barangay Officials:</strong></p>
+        <ul>
+          <li>Brgy. Captain: Edgar Silva</li>
+          <li>Konsehal: Liza Duran</li>
+          <li>Mayor: Roselyn Aso</li>
+          <li>Vice Mayor: Don don Aso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="modal18" tabindex="-1" aria-labelledby="modalLabel18" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Candaping</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselModal18" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/candaping a.jpg" class="d-block w-100" alt="candaping a">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/candaping a 2.jpg" class="d-block w-100" alt="candaping a">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal18" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselModal18" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <p><strong>Fiesta:</strong> Sept 9</p>
+        <p><strong>Segunda Devotos:</strong> Sept 10</p>
+        <p><strong>Barangay Officials:</strong></p>
+        <ul>
+          <li>Brgy. Captain: Edgar Silva</li>
+          <li>Konsehal: Liza Duran</li>
+          <li>Mayor: Roselyn Aso</li>
+          <li>Vice Mayor: Don don Aso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="modal19" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Calunasan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/canlunasan.jpg" class="modal-img mb-3" alt="calunasan">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                    <img src="../img/calunasan.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="modal fade" id="modal20" tabindex="-1" aria-labelledby="modalLabel20" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cabalasan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselModal20" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/cabalasan 2.jpg" class="d-block w-100" alt="Cabalasan">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/cabalasan 3.jpg" class="d-block w-100" alt="Cabalasan">
+            </div>
+             <div class="carousel-item">
+              <img src="cabalasan.jpg" class="d-block w-100" alt="Cabalasan">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal20" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselModal20" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <p><strong>Fiesta:</strong> Sept 9</p>
+        <p><strong>Segunda Devotos:</strong> Sept 10</p>
+        <p><strong>Barangay Officials:</strong></p>
+        <ul>
+          <li>Brgy. Captain: Edgar Silva</li>
+          <li>Konsehal: Liza Duran</li>
+          <li>Mayor: Roselyn Aso</li>
+          <li>Vice Mayor: Don don Aso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="modal fade" id="modal21" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bonga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/bonga.jpg" class="modal-img mb-3" alt="bonga">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal22" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bogo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/bogo 2.jpg" class="modal-img mb-3" alt="Bogo">
+                    <p><strong>Fiesta:</strong> Sept 9</p>
+                    <p><strong>Segunda Devotos:</strong> Sept 10</p>
+                    <p><strong>Barangay Officials:</strong></p>
+                    <ul>
+                        <li>Brgy. Captain: Edgar Silva</li>
+                        <li>Konsehal: Liza Duran</li>
+                        <li>Mayor: Roselyn Aso</li>
+                        <li>Vice Mayor: Don don Aso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let r = document.getElementById('r'), c = document.getElementById('c'), t = document.getElementById('t'), rating = 0;
+        r.onclick = e => {
+            let x = e.offsetX, w = r.offsetWidth / 5;
+            rating = Math.ceil(x / w);
+            r.textContent = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+        };
+        function a() {
+            let v = t.value.trim();
+            if (!v || !rating) return alert('Fill all');
+            if (c.textContent.includes('No comments')) c.textContent = '';
+            c.innerHTML += `<div><b style="color:gold;font-size:24px">${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}</b><p>${v}</p></div>`;
+            t.value = ''; rating = 0; r.textContent = '☆☆☆☆☆';
+        }
+    </script>
+
+    <footer class="bg-brown text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Siquijor Info. All rights reserved. <br>Contact Us: 09857679643</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
