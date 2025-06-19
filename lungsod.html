@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siquijor Info</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .btn-lightblue {
+      background-color: rgb(57, 188, 231);
+      border-color: rgb(61, 187, 230);
+      color: #181616;
+    }
+
+    .btn-lightblue:hover,
+    .btn-lightblue:focus {
+      background-color: #56c1eb;
+      border-color: #57bde6;
+      color: #000;
+    }
+
+    .bg-brown {
+      background-color: #63c2ee;
+    }
+
+    .hover-zoom {
+      transition: transform 0.4s ease;
+    }
+
+    .hover-zoom:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+    <div class="container">
+      <a href="lungsod.html" style="text-decoration: none;">
+        <div class="navbar-brand">Siquijor Info</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Overview
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="lungsod.html#about">About us</a></li>
+              <li><a class="dropdown-item" href="history.html">History</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item"><a class="nav-link" href="lungsod.html#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="lungsod.html#guidelines">Guidelines</a></li>
+          <li class="nav-item"><a class="nav-link" href="lungsod.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <header class="jumbotron-style position-relative mb-4 rounded-3 overflow-hidden">
+    <header class="mb-4">
+      <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img src="../img/siq.jpg" class="d-block w-100" alt="Banner 1"
+              style="height:350px;object-fit:cover;filter:brightness(60%);">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1 class="display-5 fw-bold">Welcome to Siquijor</h1>
+              <p class="lead">Explore the hidden paradise of the island</p>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="../img/larena 1.jpg" class="d-block w-100" alt="Banner 2"
+              style="height:350px;object-fit:cover;filter:brightness(60%);">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1 class="display-5 fw-bold">Discover Nature</h1>
+              <p class="lead">From waterfalls to beaches, Siquijor has it all</p>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="../img/talingting 2.jpg" class="d-block w-100" alt="Banner 3"
+              style="height:350px;object-fit:cover;filter:brightness(60%);">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1 class="display-5 fw-bold">Adventure Awaits</h1>
+              <p class="lead">Plan your unforgettable island journey</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+  </header>
+
+
+
+  <div class="container my-4">
+    <p class="text-center px-3 px-md-5"> Welcome to the enchanting province of <strong>Siquijor</strong> — where every
+      town tells a story, and every barangay holds a hidden gem. From mystical legends to breathtaking views, this
+      site lets you explore each <strong>lungsod</strong> (city) and its <strong>barangays</strong> with ease. Scroll
+      down, get inspired, and start your island adventure one click at a time! </p>
+  </div>
+
+  <section class="container mb-5" id="gallery">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <div class="card h-100 hover-zoom">
+          <img src="../img/siq.jpg" class="card-img-top" alt="Lungsod Siquijor" />
+          <div class="card-body">
+            <h5 class="card-title">Siquijor</h5>
+            <p class="card-text">The capital town with rich history and culture.</p>
+            <a href="../siquijor/barangay siquijor.html" class="btn btn-primary btn-sm">Explore More</a>
+            <div class="pt-5">
+              <img src="../img/Cangmalalag jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 hover-zoom">
+          <img src="../img/sanjuan m.jpg" class="card-img-top" alt="Lungsod San Juan" />
+          <div class="card-body">
+            <h5 class="card-title">San Juan</h5>
+            <p class="card-text">Known for its beautiful beaches and festivals.</p>
+            <a href="../sanjuan/barangay sanjuan.html" class="btn btn-primary btn-sm">Explore More</a>
+            <div class="pt-5">
+              <img src="../img/sanjuan jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+  <div class="card h-100 hover-zoom">
+    <img src="../img/lazi 2.jfif" class="card-img-top" alt="Lungsod Lazi" style="height:265px; object-fit: cover;" />
+    <div class="card-body">
+      <h5 class="card-title">Lazi</h5>
+      <p class="card-text">Famous for its centuries-old church&convent</p>
+      <a href="../lazi/barangay  lazi.html" class="btn btn-primary btn-sm">Explore More</a>
+      <div class="pt-5">
+        <img src="../img/lazi jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="col">
+        <div class="card h-100 hover-zoom">
+          <img src="../img/maria 2.jpg" class="card-img-top" alt="Lungsod Maria" />
+          <div class="card-body">
+            <h5 class="card-title">Maria</h5>
+            <p class="card-text">A peaceful town with hidden springs and waterfalls.</p>
+            <a href="../maria/barangay maria.html" class="btn btn-primary btn-sm">Explore More</a>
+            <div class="pt-5">
+              <img src="../img/maria jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 hover-zoom">
+          <img src="../img/talingting 2.jpg" class="card-img-top" alt="Lungsod Talingting" />
+          <div class="card-body">
+            <h5 class="card-title">Talingting</h5>
+            <p class="card-text">A scenic area with vibrant culture and festivities.</p>
+            <a href="../enrique/barangay talingting.html" class="btn btn-primary btn-sm">Explore More</a>
+            <div class="pt-5">
+              <img src="../img/talingting jpg.jfif" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 hover-zoom">
+          <img src="../img/larena 1.jpg" class="card-img-top" alt="Lungsod Larena"  style="height:265px; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title">Larena</h5>
+            <p class="card-text">Gateway to Siquijor with bustling port and market.</p>
+            <a href="../larena/brangay larena.html" class="btn btn-primary btn-sm">Explore More</a>
+            <div class="pt-5">
+              <img src="../img/larena jpg.jpg" style="width:60px;position:absolute;bottom:10px;right:10px;" alt="Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container mb-5" id="guidelines">
+    <h2 class="mb-4 text-center">📘 How to Use This Site</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-light h-100">
+          <h5>🔍 Explore Towns</h5>
+          <p>Scroll through the homepage to view each <strong>lungsod</strong> (town) in Siquijor. Click the
+            <strong>“Explore”</strong> button under any town card to see its barangays.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-light h-100">
+          <h5>🗺️ View Barangays</h5>
+          <p>Each lungsod page lists the barangays. Click on any barangay card to view more details and images in a
+            popup modal.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-light h-100">
+          <h5>📷 Image Galleries</h5>
+          <p>Barangay modals include images. Click on any image to enlarge it. Use the “❌” button to exit the view.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-light h-100">
+          <h5>🛎️ Need Help?</h5>
+          <p>Scroll to the FAQ section for answers to common travel questions. If you still need help, check the footer
+            for contact info.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 border rounded bg-light h-100">
+          <h5>📱 Mobile Friendly</h5>
+          <p>This site works well on smartphones and tablets. Tap menus and buttons to explore with ease.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section faq partial" id="faq">
+    <h2 class="section__title text-center mb-5">🌴 FAQ</h2>
+
+    <div class="faq__item">
+      <h3 class="faq__question text-primary">🛳️ How to get to the Island?</h3>
+
+      <div class="faq__intro mb-3">
+        <p>There are different ways in order to get to the Island. </p>
+        <p>Here are some popular ways: </p>
+      </div>
+
+
+      <div class="faq__answer d-flex align-items-start mb-4">
+        <div class="faq__item-img-wrapper me-3">
+          <i class="fas fa-ship fa-3x text-info"></i>
+        </div>
+        <div class="faq__item-text-wrapper">
+          <p class="faq__answer-heading fw-bold">From Bohol</p>
+          <p>Ride a Lite Ferry to Larena, Siquijor, departing on Saturday at 7PM.
+            Or, take Ocean Jet from Tagbilaran to Dumaguete (available Monday and Friday only), then book a ferry to
+            Siquijor.</p>
+        </div>
+      </div>
+
+
+      <div class="faq__answer d-flex align-items-start mb-4">
+        <div class="faq__item-img-wrapper me-3">
+          <i class="fas fa-bus fa-3x text-success"></i>
+        </div>
+        <div class="faq__item-text-wrapper">
+          <p class="faq__answer-heading fw-bold">From Cebu</p>
+          <p>Take a Lite Ferry to Larena, Siquijor, departing Wednesday and Saturday at 2PM.
+            Or take a bus to Liloan, then a Maayo Shipping ferry at 2AM on Tuesday, Thursday, and Saturday.
+            Daily fast craft to Sibulan is also available, then transfer to Dumaguete and ferry to Siquijor.</p>
+        </div>
+      </div>
+
+
+      <div class="faq__answer d-flex align-items-start mb-4">
+        <div class="faq__item-img-wrapper me-3">
+          <i class="fas fa-route fa-3x text-warning"></i>
+        </div>
+        <div class="faq__item-text-wrapper">
+          <p class="faq__answer-heading fw-bold">From Iloilo</p>
+          <p>Take a ferry to Bacolod, ride a bus to Dumaguete, then book a ferry to Siquijor.</p>
+        </div>
+      </div>
+
+
+      <div class="faq__answer d-flex align-items-start mb-4">
+        <div class="faq__item-img-wrapper me-3">
+          <i class="fas fa-map-location-dot fa-3x text-danger"></i>
+        </div>
+        <div class="faq__item-text-wrapper">
+          <p class="faq__answer-heading fw-bold">From Mindanao</p>
+          <p>From Dapitan or Zamboanga, take a ferry to Dumaguete then to Siquijor.
+            From Plaridel, ride a Lite Ferry to Larena every Sunday at 1PM.
+            You can also reach Siquijor via Cebu City.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container my-5 text-center" id="about">
+    <h2 class="mb-3">About Us</h2>
+    <p>
+      This website is called <strong>All Cities or Lungsod in Province of Siquijor and All Barangays in Each Cities or
+        Lungsod</strong>.
+      It helps you know more about every town and barangay in Siquijor. You can explore each place by clicking the
+      explore
+      more with pictures and simple info.
+      It is easy to use and made for everyone who wants to visit or learn about Siquijor.
+    </p>
+  </section>
+
+
+  <footer class="bg-brown text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Siquijor Info. All rights reserved. <br>Contact Us: 09857679643</p>
+    </div>
+  </footer>
+</body>
+
+</html>
